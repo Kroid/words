@@ -1,7 +1,12 @@
 # Words Project
+
+## Browse
+https://kroid.github.io/words/
+
+## Develop
 ```
 npm i -g node-static
 static
 ```
 
-serving "." at http://127.0.0.1:8080
+http://127.0.0.1:8080
