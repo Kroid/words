@@ -1,4 +1,6 @@
-const WORDS = [
+'use strict';
+
+var WORDS = [
   "upon",
   "such",
   "much",
@@ -105,12 +107,12 @@ const WORDS = [
   "affairs",
 ];
 
-let currentWord;
-let count = 0;
+var currentWord;
+var count = 0;
 
 
-$(document).ready(function(){
-  $( "#changeWord" ).click(function() {
+$(document).ready(function() {
+  $("#changeWord").click(function() {
     changeWord();
   });
 
