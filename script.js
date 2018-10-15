@@ -124,7 +124,8 @@ function changeWord() {
   count += 1;
   setCambridgeDictionaryLink();
   setWooordhuntLink();
-  setLingvoliveLink();
+  setMultitranLink()
+  // setLingvoliveLink();
   $('#currentWord').text(currentWord);
   $('#count').text(count);
 }
@@ -138,6 +139,11 @@ function getRandomWord() {
 function setCambridgeDictionaryLink() {
   let link = `https://dictionary.cambridge.org/dictionary/english/${currentWord}`;
   $('#cambridge').attr("href", link);
+}
+
+function setMultitranLink() {
+  let link = `https://www.multitran.ru/c/m.exe?CL=1&s=${currentWord}&l1=1`
+  $('#multitran').attr("href", link);
 }
 
 function setWooordhuntLink() {
